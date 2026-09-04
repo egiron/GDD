@@ -22,11 +22,11 @@ export default defineConfig({
 				fallback: 'index.html' // Enforces SPA routing mode fallback: '404.html'
 			}),
 			paths: { 
-				base: '/GDD/', //"/~ernestogiron/GDD"
+				base: '/GDD', //'/~ernestogiron/GDD'
 			}
 		})
 	],
-	base: '/GDD/',
+	base: '/GDD',
 	test: {
 		expect: { requireAssertions: true },
 		projects: [
