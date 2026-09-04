@@ -26,7 +26,7 @@ export default defineConfig({
 			}
 		})
 	],
-	// base: '/GDD/',
+	base: '/GDD/',
 	test: {
 		expect: { requireAssertions: true },
 		projects: [
