@@ -147,12 +147,12 @@ export async function era5_getData(lat:number, lng:number, units:string='C', sta
         dataFormatted.push(
             {
                 "timestamp": dates[i].toISOString().split('T')[0],
-                "Prec": +formatter.format(+arr_Prec?.data[i]) || -99,
-                "Tn": +formatter.format(+Tn[i]) || -99,
-                "Ta": +formatter.format(+Ta[i]) || -99,
-                "Tx": +formatter.format(+Tx[i]) || -99,
-                "Srad": +formatter.format(+Srad[i]) || -99,
-                "Wind": +formatter.format(+arr_Wind?.data[i]) || -99,
+                "Prec": +formatter.format(+arr_Prec?.data[i]), // || -99,
+                "Tn": +formatter.format(+Tn[i]), // || -99,
+                "Ta": +formatter.format(+Ta[i]), // || -99,
+                "Tx": +formatter.format(+Tx[i]), // || -99,
+                "Srad": +formatter.format(+Srad[i]), // || -99,
+                "Wind": +formatter.format(+arr_Wind?.data[i]), // || -99,
                 // "GDD": +formatter.format(+GDD[i]),
                 // "accGDD": +formatter.format(+accGDD[i]),
                 "GDD": Number(GDD[i].toFixed(1)),
